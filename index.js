@@ -1,8 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const formidable = require("express-formidable");
 const cors = require("cors");
 const axios = require("axios");
-require("dotenv").config();
+
 
 const app = express();
 app.use(formidable());
