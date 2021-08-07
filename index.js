@@ -41,7 +41,6 @@ app.get("/comics", async (req, res) => {
   });
 
 
-
 app.all("*", (req, res) => {
   res.json({ message: "Cette route n'existe pas !" });
 });
