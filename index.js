@@ -25,7 +25,7 @@ app.get("/characters", async (req, res) => {
   }
 });
 
-app.get("/comics/id", async (req, res) => {
+app.get("/comics/:id", async (req, res) => {
   try {
     const response = await axios.get(
       `https://lereacteur-marvel-api.herokuapp.com/comics/${id}?apiKey=${process.env.MARVEL_API_KEY}&skip=${req.query.skip}`
